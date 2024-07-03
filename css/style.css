@@ -13,3 +13,85 @@
 12 - TO Top
 13 - Settings Box
 ============================ */
+
+/* =========================
+1 - Style Basic
+============================ */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-preta: #000;
+}
+
+body{
+    font-family: 'Robot', sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.section-wrapper,.nav-container,.nav-content,.logo,.menu-hamburguer,.menu-list,.nav-links{
+    border: 1px solid red;
+    margin: 8px;
+}
+
+/* =========================
+2 - Navbar
+============================ */
+.nav-container{
+    border: 1px solid blue;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+/* =========================
+3 - Banner
+============================ */
+/* =========================
+4 - About
+============================ */
+/* =========================
+5 - Portfolio
+============================ */
+/* =========================
+6 - Skills
+============================ */
+/* =========================
+7 - Video
+============================ */
+/* =========================
+8 - Testimonial
+============================ */
+/* =========================
+9 - Blog
+============================ */
+/* =========================
+10 - Contact
+============================ */
+/* =========================
+11 - Footer
+============================ */
+/* =========================
+12 - TO Top
+============================ */
+/* =========================
+13 - Settings Box
+============================ */
