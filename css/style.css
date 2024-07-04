@@ -25,21 +25,22 @@
     box-sizing: border-box;
 }
 
+/* Seletor para a criação de variáveis */
 :root{
     --cor-preta: #000;
+    --font-roboto:'Roboto', sans-serif;
+    --font-poppins:'Poppins', sans-serif;
 }
 
 body{
-    font-family: 'Robot', sans-serif;
     background-color: #fff;
     color: #000;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 30px;
+    font: 400 15px/30px var(--font-roboto);
     letter-spacing: 0.5px;
     overflow-x: hidden;
 }
 
+/* !important significa que para todo os ul do projeto será aplicado um stylo 'none' */
 ul{
     list-style: none !important;
 }
@@ -48,23 +49,129 @@ a{
     text-decoration: none !important;
 }
 
-.section-wrapper,.nav-container,.nav-content,.logo,.menu-hamburguer,.menu-list,.nav-links{
-    border: 1px solid red;
-    margin: 8px;
+.hero-container{
+    position: relative;
+    width: 100%;
+    max-width: 1070px;
+    height: 100%;
+    margin: auto;
+    padding: 0 40px;
 }
+
 
 /* =========================
 2 - Navbar
 ============================ */
 .nav-container{
-    border: 1px solid blue;
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 2;
+}
+
+.nav-container .nav-content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 18px 50px;
+}
+
+.nav-container .nav-content .logo h2{
+    position: relative;
+    font: 900 22px var(--font-poppins);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--cor-preta);
+}
+
+.nav-container .nav-content ul{
+    display: flex;
+    position: relative;
+    column-gap: 25px;
+}
+
+.nav-container .nav-content ul li a{
+    position: relative;
+    font: 500 15px var(--font-poppins);
+    text-transform: capitalize;
+    color: var(--cor-preta);
+}
+
+.nav-container .nav-content .menu-hamburguer{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.nav-container .nav-content .menu-hamburguer > .hamburguer{
+    background-color: var(--cor-preta);
+    position: relative;
+    margin-top: 10px;
+    width: 40px;
+    height: 3px;
 }
 /* =========================
 3 - Banner
 ============================ */
+.banner-hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.banner-hero .banner-hero-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    clip-path: polygon(0% 100%, 21% 0%, 100% 0%, 100% 100%);
+}
+
+.banner-hero .hero-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../img/banner/banner.jpg') no-repeat center/cover;
+}
+
+.banner-hero .hero-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-hero .hero-content h2 span{
+    padding-left: 2px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--cor-preta);
+}
+
+.banner-hero .hero-content h2{
+    position: relative;
+    display: inline-block;
+    font: 900 55px/1.2 var(--font-poppins);
+    text-transform: uppercase;
+    color: var(--cor-preta);
+    overflow: hidden;
+}
+
+.banner-hero .hero-content .banner-job{
+    position: relative;
+    margin-bottom: 25px;
+    padding-right: 30px;
+    font: 500 17px var(--font-roboto);
+    overflow: hidden;
+    margin-top: 50px;
+}
+
 /* =========================
 4 - About
 ============================ */
