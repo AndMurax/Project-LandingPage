@@ -35,7 +35,7 @@
 body{
     background-color: #fff;
     color: #000;
-    font: 400 15px/30px var(--font-roboto);
+    font: 400 16px/30px var(--font-roboto);
     letter-spacing: 0.5px;
     overflow-x: hidden;
 }
@@ -175,6 +175,80 @@ a{
 /* =========================
 4 - About
 ============================ */
+.about-section{
+    padding: 100px 0px;
+}
+
+.about-container{
+    position: relative;
+    display: flex;
+    max-width: 1070px;
+    margin: auto;
+}
+
+.about-image{
+    position: relative;
+    flex: 1;
+}
+
+.about-image > img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 469px;
+}
+
+.about-description{
+    flex: 1;
+    padding-top: 20px;
+}
+a
+.about-description span{
+    position: relative;
+    display: inline-block;
+    background-color: var(--cor-preta);
+    color: #fff;
+    text-transform: uppercase;
+    font: 500 12px var(--font-poppins);
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.about-description .title{
+    position: relative;
+    margin: 30px 0px 40px 0px;
+}
+
+.about-description .title > h2{
+    font: 900 30px var(--font-poppins);
+    line-height: 1.4;
+}
+
+.about-description .desc{
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.about-description button{
+    position: relative;
+    background-color: var(--cor-preta);
+    color: #fff;
+    font: 300 14px var(--font-poppins);
+    letter-spacing: 1px;
+    border: 1px solid var(--cor-preta);
+    padding: 20px 50px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.about-description button:hover{
+    background-color: transparent;
+    color: var(--cor-preta);
+    font-weight: 600;
+}
+
+
 /* =========================
 5 - Portfolio
 ============================ */
